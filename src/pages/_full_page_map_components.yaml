@@ -1,21 +1,21 @@
-- id: 'bikes'
-  label: 'Bike Lanes'
+- id: 'vendor everything'
+  label: 'All Produce'
   toggle: true  
   visible: false
   data-type: 'geojson'
-  layer-type: 'line'
-  url: 'https://data.cityofnewyork.us/resource/mzxg-pwib.geojson?$limit=10000'
-  paint:
-    line-color: '#000000'
-    line-width: 3
+  layer-type: 'circle'
+  url: 'C:\Users\Noah\Desktop\GIS Repository Local\public\data\test.geojson'
+  paint: true
+    circle-color: '#FA4BDD'
+    circle-radius: 5
 
-- id: 'pizza'
-  label: 'Pizza Places'
+- id: 'vendor fv'
+  label: 'Fruits + Vegetables'
   toggle: true
-  visible: true
+  visible: false
   data-type: 'geojson'
   layer-type: 'circle'
-  url: 'https://data.cityofnewyork.us/resource/43nn-pn8j.geojson?cuisine_description=Pizza&$limit=10000'
+  url: 'C:\Users\Noah\Desktop\GIS Repository Local\public\data\Vendor Fruits + Vegetables.geojson'
   paint:
     circle-color: '#ff0000'
     circle-radius: 5

@@ -1,0 +1,8 @@
+{
+"type": "FeatureCollection",
+"name": "Vendor Longan+Mango",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "OBJECTID": 35, "Match_addr": "125 Mott St, New York, New York, 10013", "X": -73.99704997000001, "Y": 40.71815503, "Type": "table", "Name": "Martha’s Best", "Address": "125 Mott St.", "Borough": "Manhattan", "Produce Ty": "mango;longan", "2006": 1, "2007": 1, "2008": 1, "2009": 1, "2010": 1, "2011": 0, "2012": 0, "2013": 0, "2014": 0, "2015": 0, "2016": 0, "2017": 0, "2018": 0, "2019": 0, "2020": 0, "2021": 0, "2022": 0, "2023": 0, "osm_type": "node", "display_na": "125, Mott Street, Little Italy, Manhattan, New York County, New York, 10013, United States", "place_id": "15306797", "class": "place", "type_2": "house", "road": "Mott Street", "village": null, "city_distr": null, "town": null, "city": "New York", "state": "New York", "country": "United States", "postcode": "10013" }, "geometry": { "type": "Point", "coordinates": [ -73.9970485, 40.7181468 ] } }
+]
+}
