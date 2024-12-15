@@ -14,7 +14,7 @@
       type: 'circle'
       data-type: 'geojson'
       layer-type: 'circle'
-      persist: false
+      persist: true
       paint:
         circle-color: '#59f0a2'
         circle-opacity: 0
@@ -28,7 +28,7 @@
       type: 'circle'
       data-type: 'geojson'
       layer-type: 'circle'
-      persist: false
+      persist: true
       paint:
         circle-color: '#59f0a2'
         circle-opacity: 0.5
@@ -42,7 +42,7 @@
       type: 'circle'
       data-type: 'geojson'
       layer-type: 'circle'
-      persist: false
+      persist: true
       paint:
         circle-color: '#59f0a2'
         circle-opacity: 0.5
@@ -63,7 +63,7 @@
       type: 'circle'
       data-type: 'geojson'
       layer-type: 'circle'
-      persist: false
+      persist: true
       paint:
         circle-color: '#ff01c8'
         circle-opacity: 0
@@ -77,7 +77,7 @@
       type: 'circle'
       data-type: 'geojson'
       layer-type: 'circle'
-      persist: false
+      persist: true
       paint:
         circle-color: '#ff01c8'
         circle-opacity: 0.5
@@ -91,7 +91,7 @@
       type: 'circle'
       data-type: 'geojson'
       layer-type: 'circle'
-      persist: false
+      persist: true
       paint:
         circle-color: '#ff01c8'
         circle-opacity: 0.5
