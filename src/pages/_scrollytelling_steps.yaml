@@ -307,7 +307,7 @@
         circle-opacity: 1
         circle-stroke-color: '#59f0a2'
         circle-stroke-width: 2
-        circle-radius: 10
+        circle-radius: 8
         circle-stroke-opacity: 1
     
     - id: 'Double Green Produce'
@@ -321,7 +321,7 @@
         circle-opacity: 1
         circle-stroke-color: '#ffb301'
         circle-stroke-width: 2
-        circle-radius: 10
+        circle-radius: 8
         circle-stroke-opacity: 1
       
     - id: 'Longan and Mango Vendors'
@@ -469,7 +469,7 @@
       paint:
         line-color: '#ffb301'
         line-opacity: 0.5
-        line-width: 0.05
+        line-width: 0.1
 
     - id: 'DG Coconut Departure'
       url: './data/Double Green Spoke and Hub/Coconut Imports/DG Coconut Departure.geojson'
@@ -522,7 +522,7 @@
       paint:
         line-color: '#59f0a2'
         line-opacity: 0.5
-        line-width: 0.05
+        line-width: 0.1
 
     - id: 'New Son Yeng Ginger Departures'
       url: './data/New Song Yen Spoke and Hub/Ginger/NS Ginger Departure 2.geojson'
@@ -566,7 +566,7 @@
       paint:
         line-color: '#59f0a2'
         line-opacity: 0.5
-        line-width: 0.05
+        line-width: 0.1
         
 - title: Comparing Ginger Networks
   center: [-12.15602, 36.67585]
@@ -585,7 +585,7 @@
       paint:
         line-color: '#59f0a2'
         line-opacity: 0.5
-        line-width: 0.05
+        line-width: 0.1
 
     - id: 'New Son Yeng Ginger Departures'
       url: './data/New Song Yen Spoke and Hub/Ginger/NS Ginger Departure 2.geojson'
@@ -629,7 +629,7 @@
       paint:
         line-color: '#59f0a2'
         line-opacity: 0.5
-        line-width: 0.05
+        line-width: 0.1
         
     - id: 'Double Green Ginger Departures'
       url: '.\data\Double Green Spoke and Hub\Ginger\DG Ginger Departure.geojson'
@@ -672,7 +672,7 @@
       paint:
         line-color: '#ffb301'
         line-opacity: 0.5
-        line-width: 0.05
+        line-width: 0.1
 
 
 
