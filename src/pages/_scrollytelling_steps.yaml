@@ -1,32 +1,679 @@
-- title: Introduction
-  center: [-74.0060, 40.7128]
-  zoom: 10
-  pitch: 0
-  bearing: 0
-  description: Welcome to the map scrollytelling app. You can set position, zoom, pitch, and bearing via the top-level props.
 
 - title: NYC Chinatown Vendor Wholesaler Network
   center: [-73.99246, 40.72262]
-  zoom: 13.39
+  zoom: 13.2
   pitch: 0
   bearing: 0
-  description: Now we zoom in. A layer is added from a geojson  Layer paint properties are passed, and layers are set to turn off when you continue scrolling via the `persist:false` attribute.
+  description: The premise of this project was to expand upon Zoe Lin's project, The Bittersweet Harvest, Navigating Manhattan Chinatown's Changing Produce Network. This network is comprised of local wholesale to vendor relationships, which allow local vendors to sell affordable produce to its residents of Chinatown while in competition with larger companies.
+    ImportYeti.com
+   Zoe's Project Link - https://zoelin1122.github.io/ChinatownProduceNetwork/index.html#section-0
   
   layers:
-  # id of layer
-  - id: 'Vendor Vegetables'
-  # path to dataset 
-  # note anything uploaded in the public/data folder will be uploaded to your site at url/data/file.png
-    url: './QGIS2Web\layers\Vendors_0.js'
-  # type of symbol
-    type: 'circle'
-  # type of symbol
-    data-type: 'geojson'
-    layer-type: 'circle'
-    persist: true
-    paint:
-      circle-radius: 3
-      circle-color: '#02D908'
-      circle-opacity: 1.0
+    - id: 'Vendor Fruits and Vegetables'
+      url: './data/Vendor Fruits + Vegetables.geojson'
+      type: 'circle'
+      data-type: 'geojson'
+      layer-type: 'circle'
+      persist: false
+      paint:
+        circle-color: '#59f0a2'
+        circle-opacity: 0
+        circle-stroke-color: '#59f0a2'
+        circle-stroke-width: 0.75
+        circle-radius: 3.5
+        circle-stroke-opacity: 1
+
+    - id: 'Wholesale'
+      url: './data/Wholesale Fruits and Vegetables.geojson'
+      type: 'circle'
+      data-type: 'geojson'
+      layer-type: 'circle'
+      persist: false
+      paint:
+        circle-color: '#59f0a2'
+        circle-opacity: 0.5
+        circle-stroke-color: '#59f0a2'
+        circle-stroke-width: 2
+        circle-radius: 5
+        circle-stroke-opacity: 1
+
+    - id: 'New Son Yeng Produce'
+      url: './data/New Son Yeng Produce.geojson'
+      type: 'circle'
+      data-type: 'geojson'
+      layer-type: 'circle'
+      persist: false
+      paint:
+        circle-color: '#59f0a2'
+        circle-opacity: 0.5
+        circle-stroke-color: '#59f0a2'
+        circle-stroke-width: 2
+        circle-radius: 5
+        circle-stroke-opacity: 1
+
+- title: Chinatown Fruit Vendors and their Wholesalers
+  center: [-73.99246, 40.72262]
+  zoom: 13.2
+  pitch: 0
+  bearing: 0
+  description: These vendors primarily sell fruit that they get from their surrounding wholesale businesses. Strong relationships are made, allowing for profit margins to be shed on the promise of returning business. 
+  layers:
+    - id: 'Fruit Vendors'
+      url: './data/Vendor Fruits.geojson'
+      type: 'circle'
+      data-type: 'geojson'
+      layer-type: 'circle'
+      persist: false
+      paint:
+        circle-color: '#ff01c8'
+        circle-opacity: 0
+        circle-stroke-color: '#ff01c8'
+        circle-stroke-width: 0.75
+        circle-radius: 3.5
+        circle-stroke-opacity: 1
+
+    - id: 'Wholesale'
+      url: './data/Wholesale Fruits and Vegetables.geojson'
+      type: 'circle'
+      data-type: 'geojson'
+      layer-type: 'circle'
+      persist: false
+      paint:
+        circle-color: '#ff01c8'
+        circle-opacity: 0.5
+        circle-stroke-color: '#ff01c8'
+        circle-stroke-width: 2
+        circle-radius: 5
+        circle-stroke-opacity: 1
+
+    - id: 'Wholesale 2'
+      url: './data/Wholesale Fruits.geojson'
+      type: 'circle'
+      data-type: 'geojson'
+      layer-type: 'circle'
+      persist: false
+      paint:
+        circle-color: '#ff01c8'
+        circle-opacity: 0.5
+        circle-stroke-color: '#ff01c8'
+        circle-stroke-width: 2
+        circle-radius: 5
+        circle-stroke-opacity: 1
+
+- title: South East Asian Fruits and Herbs
+  center: [-73.99246, 40.72262]
+  zoom: 13.2
+  pitch: 0
+  bearing: 0
+  description: In order to be able to provide South East Asian Fruits, Vegetables, and Herbs year round, farmers have had to relocate and spread out through the world. As a result, we will look at two wholesalers and their gloabl relationships in order to keep up with demand. 
+  layers:
+    - id: 'Longan Vendor'
+      url: './data/Vendor Longan.geojson'
+      type: 'circle'
+      data-type: 'geojson'
+      layer-type: 'circle'
+      persist: false
+      paint:
+        circle-color: '#ffb301'
+        circle-opacity: 0
+        circle-stroke-color: '#ffb301'
+        circle-stroke-width: 0.5
+        circle-radius: 3
+        circle-stroke-opacity: 1
+
+    - id: 'Longan and Lychee Vendors'
+      url: './data/Vendor Longan+Lychee.geojson'
+      type: 'circle'
+      data-type: 'geojson'
+      layer-type: 'circle'
+      persist: false
+      paint:
+        circle-color: '#ffb301'
+        circle-opacity: 0
+        circle-stroke-color: '#ffb301'
+        circle-stroke-width: 0.5
+        circle-radius: 3
+        circle-stroke-opacity: 1
+
+    - id: 'New Son Yeng Produce'
+      url: './data/New Son Yeng Produce.geojson'
+      type: 'circle'
+      data-type: 'geojson'
+      layer-type: 'circle'
+      persist: false
+      paint:
+        circle-color: '#ffb301'
+        circle-opacity: 0.5
+        circle-stroke-color: '#ffb301'
+        circle-stroke-width: 2
+        circle-radius: 5
+        circle-stroke-opacity: 1
+
+    - id: 'Double Green Produce'
+      url: './data/Double Green Wholesale.geojson'
+      type: 'circle'
+      data-type: 'geojson'
+      layer-type: 'circle'
+      persist: false
+      paint:
+        circle-color: '#ffb301'
+        circle-opacity: 0.5
+        circle-stroke-color: '#ffb301'
+        circle-stroke-width: 2
+        circle-radius: 5
+        circle-stroke-opacity: 1
+
+    - id: 'Longan and Mango Vendors'
+      url: './data/Vendor Longan+Mango.geojson'
+      type: 'circle'
+      data-type: 'geojson'
+      layer-type: 'circle'
+      persist: false
+      paint:
+        circle-color: '#ffb301'
+        circle-opacity: 0
+        circle-stroke-color: '#ffb301'
+        circle-stroke-width: 1
+        circle-radius: 3
+        circle-stroke-opacity: 1
+
+    - id: 'SEAHs Wholesale'
+      url: './data/Wholesale SEAHs.geojson'
+      type: 'circle'
+      data-type: 'geojson'
+      layer-type: 'circle'
+      persist: false
+      paint:
+        circle-color: '#ffb301'
+        circle-opacity: 0.5
+        circle-stroke-color: '#ffb301'
+        circle-stroke-width: 2
+        circle-radius: 5
+        circle-stroke-opacity: 1
+- title: Overview of the Local
+  center: [-73.99246, 40.72262]
+  zoom: 13.2
+  pitch: 0
+  bearing: 0
+  description: Note the two wholesalers, Double Green Wholesalers (highlighted in yellow) and New Son Yeng LLC (in turquoise). Both operate on an international scale to supply Chinatown with fresh produce.
+  layers:
+
+    - id: 'Vendor Fruits and Vegetables'
+      url: '.\data\Vendor Fruits + Vegetables.geojson'
+      type: 'circle'
+      data-type: 'geojson'
+      layer-type: 'circle'
+      persist: false
+      paint:
+        circle-color: '#59f0a2'               # Green fill color
+        circle-opacity: 0                     # 20% opacity for the fill
+        circle-stroke-color: '#59f0a2'        # Green outline color (same as fill)
+        circle-stroke-width: .75                # Outline thickness (3px)
+        circle-radius: 3.5                      # Circle radius
+        circle-stroke-opacity: .2
+
+    - id: 'Wholesale'
+      url: './data\Wholesale Fruits and Vegetables.geojson'
+      type: 'circle'
+      data-type: 'geojson'
+      layer-type: 'circle'
+      persist: false
+      paint:
+        circle-color: '#59f0a2'
+        circle-opacity: 0
+        circle-stroke-color: '#59f0a2'
+        circle-stroke-width: 2
+        circle-radius: 5
+        circle-stroke-opacity: .2
+    
+    - id: 'Fruit Vendors'
+      url: './data\Vendor Fruits.geojson'
+      type: 'circle'
+      data-type: 'geojson'
+      layer-type: 'circle'
+      persist: false
+      paint:
+        circle-color: '#ff01c8'               # Green fill color
+        circle-opacity: 0                     # 20% opacity for the fill
+        circle-stroke-color: '#ff01c8'        # Green outline color (same as fill)
+        circle-stroke-width: .75                # Outline thickness (3px)
+        circle-radius: 3.5                      # Circle radius
+        circle-stroke-opacity: .1
+
+    - id: 'Wholesale'
+      url: './data\Wholesale Fruits and Vegetables.geojson'
+      type: 'circle'
+      data-type: 'geojson'
+      layer-type: 'circle'
+      persist: false
+      paint:
+        circle-color: '#ff01c8'
+        circle-opacity: 0
+        circle-stroke-color: '#ff01c8'
+        circle-stroke-width: 2
+        circle-radius: 5
+        circle-stroke-opacity: .2
+
+    - id: 'Wholesale 2'
+      url: './data\Wholesale Fruits.geojson'
+      type: 'circle'
+      data-type: 'geojson'
+      layer-type: 'circle'
+      persist: false
+      paint:
+        circle-color: '#ff01c8'
+        circle-opacity: 0
+        circle-stroke-color: '#ff01c8'
+        circle-stroke-width: 2
+        circle-radius: 5
+        circle-stroke-opacity: .2
+
+    - id: 'Longan Vendor'
+      url: './data\Vendor Longan.geojson'
+      type: 'cicle'
+      data-type: 'geojson'
+      layer-type: 'circle'
+      persist: false
+      paint:
+        circle-color: '#ffb301'               # Green fill color
+        circle-opacity: 0                     # 20% opacity for the fill
+        circle-stroke-color: '#ffb301'        # Green outline color (same as fill)
+        circle-stroke-width: .1               # Outline thickness (3px)
+        circle-radius: 3                      # Circle radius
+        circle-stroke-opacity: .2
+
+    - id: 'Longan and Lychee Vendors'
+      url: './data\Vendor Longan+Lychee.geojson'
+      type: 'circle'
+      data-type: 'geojson'
+      layer-type: 'circle'
+      persist: false
+      paint:
+        circle-color: '#ffb301'               # Green fill color
+        circle-opacity: 0                     # 20% opacity for the fill
+        circle-stroke-color: '#ffb301'        # Green outline color (same as fill)
+        circle-stroke-width: .1               # Outline thickness (3px)
+        circle-radius: 3                      # Circle radius
+        circle-stroke-opacity: .2
+
+    - id: 'New Son Yeng Produce'
+      url: '.\data\New Son Yeng Produce 2.geojson'
+      type: 'circle'
+      data-type: 'geojson'
+      layer-type: 'circle'
+      persist: false
+      paint:
+        circle-color: '#59f0a2'
+        circle-opacity: 1
+        circle-stroke-color: '#59f0a2'
+        circle-stroke-width: 2
+        circle-radius: 10
+        circle-stroke-opacity: 1
+    
+    - id: 'Double Green Produce'
+      url: '.\data\Double Green Wholesale.geojson'
+      type: 'circle'
+      data-type: 'geojson'
+      layer-type: 'circle'
+      persist: false
+      paint:
+        circle-color: '#ffb301'
+        circle-opacity: 1
+        circle-stroke-color: '#ffb301'
+        circle-stroke-width: 2
+        circle-radius: 10
+        circle-stroke-opacity: 1
+      
+    - id: 'Longan and Mango Vendors'
+    # path to dataset 
+    # note anything uploaded in the public/data folder will be uploaded to your site at url/data/file.png
+      url: './data\Vendor Longan+Mango.geojson'
+    # type of symbol
+      type: 'circle'
+    # type of symbol
+      data-type: 'geojson'
+      layer-type: 'circle'
+      persist: false
+      paint:
+        circle-color: '#ffb301'               # Green fill color
+        circle-opacity: 0                     # 20% opacity for the fill
+        circle-stroke-color: '#ffb301'        # Green outline color (same as fill)
+        circle-stroke-width: 1               # Outline thickness (3px)
+        circle-radius: 3                      # Circle radius
+        circle-stroke-opacity: .2
+
+    - id: 'SEAHs Wholesale'
+      url: './data\Wholesale SEAHs.geojson'
+      type: 'circle'
+      data-type: 'geojson'
+      layer-type: 'circle'
+      persist: false
+      paint:
+        circle-color: '#ffb301'
+        circle-opacity: 0
+        circle-stroke-color: '#ffb301'
+        circle-stroke-width: 2
+        circle-radius: 5
+        circle-stroke-opacity: .2
+
+- title: New Son Yeng Coconut Network
+  center: [-12.15602, 36.67585]
+  zoom: 1.75
+  pitch: 0
+  bearing: 0
+  description: New Son Yeng imports their coconuts from Thailand and Laos primarily, but it also works through French ports with other wholesalers. 
+  layers:
+    - id: 'Coconut Connections'
+      url: './data/New Song Yen Spoke and Hub/Coconut Exports/Coconut Connections.geojson'
+      type: 'line'
+      data-type: 'geojson'
+      layer-type: 'line'
+      persist: false
+      paint:
+        line-color: '#59f0a2'
+        line-opacity: 0.5
+        line-width: 0.05
+
+    - id: 'Coconut Departure'
+      url: './data/New Song Yen Spoke and Hub/Coconut Exports/Coconut Departure.geojson'
+      type: 'circle'
+      data-type: 'geojson'
+      layer-type: 'circle'
+      persist: false
+      paint:
+        circle-color: '#59f0a2'
+        circle-opacity: 0
+        circle-stroke-width: 1
+        circle-stroke-opacity: 0.3
+        circle-stroke-color: '#59f0a2'
+        circle-radius: [
+          'step', ['get', 'Weight'], 
+          0.5, 
+          20900.00, 5, 
+          22050.00, 10, 
+          23279.00, 15, 
+          24472.00, 20,
+          25300.00, 25,
+          29081.00, 25,
+        ]
+
+    - id: 'Coconut Destination'
+      url: './data/New Song Yen Spoke and Hub/Durian Exports/Durian Destination.geojson'
+      type: 'circle'
+      data-type: 'geojson'
+      layer-type: 'circle'
+      persist: false
+      paint:
+        circle-color: '#59f0a2'
+        circle-opacity: 1
+        circle-radius: 4
+
+- title: Comparing Coconut Networks
+  center: [-12.15602, 36.67585]
+  zoom: 1.75
+  pitch: 0
+  bearing: 0
+  description: Both New Son Yeng and Double Green Wholesalers operate in opposite parts of the United States and the world, providing fresh coconut all year round to New York and beyond. 
+  layers:
+    - id: 'Coconut Connections'
+      url: './data/New Song Yen Spoke and Hub/Coconut Exports/Coconut Connections.geojson'
+      type: 'line'
+      data-type: 'geojson'
+      layer-type: 'line'
+      persist: false
+      paint:
+        line-color: '#59f0a2'
+        line-opacity: 0.5
+        line-width: 0.05
+
+    - id: 'Coconut Departure'
+      url: './data/New Song Yen Spoke and Hub/Coconut Exports/Coconut Departure.geojson'
+      type: 'circle'
+      data-type: 'geojson'
+      layer-type: 'circle'
+      persist: false
+      paint:
+        circle-color: '#59f0a2'
+        circle-opacity: 0
+        circle-stroke-width: 1
+        circle-stroke-opacity: 0.3
+        circle-stroke-color: '#59f0a2'
+        circle-radius: [
+          'step', ['get', 'Weight'], 
+          0.5, 
+          20900.00, 5, 
+          22050.00, 10, 
+          23279.00, 15, 
+          24472.00, 20,
+          25300.00, 25,
+          29081.00, 25
+        ]
+
+    - id: 'Coconut Destination'
+      url: './data/New Song Yen Spoke and Hub/Durian Exports/Durian Destination.geojson'
+      type: 'circle'
+      data-type: 'geojson'
+      layer-type: 'circle'
+      persist: false
+      paint:
+        circle-color: '#59f0a2'
+        circle-opacity: 1
+        circle-radius: 4
+
+    - id: 'DG Coconut Connections'
+      url: './data/Double Green Spoke and Hub/Coconut Imports/DG Coconut Hub Lines.geojson'
+      type: 'line'
+      data-type: 'geojson'
+      layer-type: 'line'
+      persist: false
+      paint:
+        line-color: '#ffb301'
+        line-opacity: 0.5
+        line-width: 0.05
+
+    - id: 'DG Coconut Departure'
+      url: './data/Double Green Spoke and Hub/Coconut Imports/DG Coconut Departure.geojson'
+      type: 'circle'
+      data-type: 'geojson'
+      layer-type: 'circle'
+      persist: false
+      paint:
+        circle-color: '#ffb301'
+        circle-opacity: 0
+        circle-stroke-width: 1
+        circle-stroke-opacity: 0.1
+        circle-stroke-color: '#ffb301'
+        circle-radius: [
+          'step', ['get', 'Weight'], 
+          0.5, 
+          6202.00, 5, 
+          13720.00, 10, 
+          14771.00, 15, 
+          16480.00, 20,
+          17433.00, 25,
+          92826.00, 25,
+        ]
+
+    - id: 'DG Coconut Destination'
+      url: './data/Double Green Spoke and Hub/Coconut Imports/DG Coconut Destination.geojson'
+      type: 'circle'
+      data-type: 'geojson'
+      layer-type: 'circle'
+      persist: false
+      paint:
+        circle-color: '#ffb301'
+        circle-opacity: 1
+        circle-radius: 4
+
+- title: New Son Yeng Ginger Network
+  center: [-12.15602, 36.67585]
+  zoom: 1.75
+  pitch: 0
+  bearing: 0
+  description: The network includes multiple departure points, connections, and destinations for ginger distribution.The ginger departure points have varying weights, ranging from 18,000 to 22,010 kg, indicating a diverse supply chain. The connections are represented by lines with high opacity and width, suggesting strong and visible trade routes. 
+  
+  layers:
+    - id: 'New Son Yeng Ginger Connections'
+      url: '.\data\New Song Yen Spoke and Hub\Ginger\NS Ginger Connections.geojson'
+      type: 'line'
+      data-type: 'geojson'
+      layer-type: 'line'
+      persist: false
+      paint:
+        line-color: '#59f0a2'
+        line-opacity: 0.5
+        line-width: 0.05
+
+    - id: 'New Son Yeng Ginger Departures'
+      url: './data/New Song Yen Spoke and Hub/Ginger/NS Ginger Departure 2.geojson'
+      type: 'circle'
+      data-type: 'geojson'
+      layer-type: 'circle'
+      persist: false
+      paint:
+        circle-color: '#59f0a2'
+        circle-opacity: 0
+        circle-stroke-width: 1
+        circle-stroke-opacity: 1
+        circle-stroke-color: '#59f0a2'
+        circle-radius: [
+          'step', ['get', 'Weight'], 
+          0.5, 
+          18000.00, 5, 
+          19840.00, 10, 
+          20840.00, 15, 
+          20846.00, 20,
+          21490.00, 25,
+          22010.00, 25,
+        ]
+    - id: 'New Son Yeng Ginger Destination'
+      url: './data\New Song Yen Spoke and Hub\Ginger\NS Ginger Destination.geojson'
+      type: 'circle'
+      data-type: 'geojson'
+      layer-type: 'circle'
+      persist: false
+      paint:
+        circle-color: '#59f0a2'
+        circle-opacity: 1
+        circle-radius: 4
+
+    - id: 'New Son Yeng Ginger Connections'
+      url: '.\data\New Song Yen Spoke and Hub\Ginger\NS Ginger Connections.geojson'
+      type: 'line'
+      data-type: 'geojson'
+      layer-type: 'line'
+      persist: false
+      paint:
+        line-color: '#59f0a2'
+        line-opacity: 0.5
+        line-width: 0.05
+        
+- title: Comparing Ginger Networks
+  center: [-12.15602, 36.67585]
+  zoom: 1.75
+  pitch: 0
+  bearing: 0
+  description: The weight ranges for New Son Yeng's departure points (18,000 to 22,010) are more consistent compared to Double Green's (13,160 to 27,500), potentially indicating a more stable supply.This extensive and diverse network structure could help New Son Yeng adapt to and offset periods of low harvest by leveraging its various sources and established distribution channels.
+  
+  layers:
+    - id: 'New Son Yeng Ginger Connections'
+      url: '.\data\New Song Yen Spoke and Hub\Ginger\NS Ginger Connections.geojson'
+      type: 'line'
+      data-type: 'geojson'
+      layer-type: 'line'
+      persist: false
+      paint:
+        line-color: '#59f0a2'
+        line-opacity: 0.5
+        line-width: 0.05
+
+    - id: 'New Son Yeng Ginger Departures'
+      url: './data/New Song Yen Spoke and Hub/Ginger/NS Ginger Departure 2.geojson'
+      type: 'circle'
+      data-type: 'geojson'
+      layer-type: 'circle'
+      persist: false
+      paint:
+        circle-color: '#59f0a2'
+        circle-opacity: 0
+        circle-stroke-width: 1
+        circle-stroke-opacity: 1
+        circle-stroke-color: '#59f0a2'
+        circle-radius: [
+          'step', ['get', 'Weight'], 
+          0.5, 
+          18000.00, 5, 
+          19840.00, 10, 
+          20840.00, 15, 
+          20846.00, 20,
+          21490.00, 25,
+          22010.00, 25,
+        ]
+    - id: 'New Son Yeng Ginger Destination'
+      url: './data\New Song Yen Spoke and Hub\Ginger\NS Ginger Destination.geojson'
+      type: 'circle'
+      data-type: 'geojson'
+      layer-type: 'circle'
+      persist: false
+      paint:
+        circle-color: '#59f0a2'
+        circle-opacity: 1
+        circle-radius: 4
+
+    - id: 'New Son Yeng Ginger Connections'
+      url: '.\data\New Song Yen Spoke and Hub\Ginger\NS Ginger Connections.geojson'
+      type: 'line'
+      data-type: 'geojson'
+      layer-type: 'line'
+      persist: false
+      paint:
+        line-color: '#59f0a2'
+        line-opacity: 0.5
+        line-width: 0.05
+        
+    - id: 'Double Green Ginger Departures'
+      url: '.\data\Double Green Spoke and Hub\Ginger\DG Ginger Departure.geojson'
+      type: 'circle'
+      data-type: 'geojson'
+      layer-type: 'circle'
+      persist: false
+      paint:
+        circle-color: '#59f0a2'
+        circle-opacity: 0
+        circle-stroke-width: 1
+        circle-stroke-opacity: 1
+        circle-stroke-color: '#ffb301'
+        circle-radius: [
+          'step', ['get', 'Weight'], 
+          0.5, 
+          13160.00, 5, 
+          15864.60, 10, 
+          16746.00, 15, 
+          17745.20, 20,
+          22889.00, 25,
+          27500.00, 25,
+        ]
+    - id: 'Double Green Ginger Destination'
+      url: '.\data\Double Green Spoke and Hub\Ginger\DG Ginger Destination.geojson'
+      type: 'circle'
+      data-type: 'geojson'
+      layer-type: 'circle'
+      persist: false
+      paint:
+        circle-color: '#ffb301'
+        circle-opacity: 1
+        circle-radius: 4
+    - id: 'Double Green Ginger Connections'
+      url: '.\data\Double Green Spoke and Hub\Ginger\DG Ginger Connections.geojson'
+      type: 'line'
+      data-type: 'geojson'
+      layer-type: 'line'
+      persist: false
+      paint:
+        line-color: '#ffb301'
+        line-opacity: 0.5
+        line-width: 0.05
+
+
 
 
