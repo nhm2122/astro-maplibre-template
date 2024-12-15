@@ -45,7 +45,7 @@
       persist: true
       paint:
         circle-color: '#59f0a2'
-        circle-opacity: 0.5
+        circle-opacity: 1
         circle-stroke-color: '#59f0a2'
         circle-stroke-width: 2
         circle-radius: 5
@@ -190,6 +190,7 @@
         circle-stroke-width: 2
         circle-radius: 5
         circle-stroke-opacity: 1
+
 - title: Overview of the Local
   center: [-73.99246, 40.72262]
   zoom: 13.2
@@ -199,7 +200,7 @@
   layers:
 
     - id: 'Vendor Fruits and Vegetables'
-      url: '.\data\Vendor Fruits + Vegetables.geojson'
+      url: './data\Vendor Fruits + Vegetables.geojson'
       type: 'circle'
       data-type: 'geojson'
       layer-type: 'circle'
@@ -296,8 +297,8 @@
         circle-radius: 3                      # Circle radius
         circle-stroke-opacity: .2
 
-    - id: 'New Son Yeng Produce'
-      url: '.\data\New Son Yeng Produce 2.geojson'
+    - id: 'New Son Yeng Produce 2'
+      url: './data\New Son Yeng Produce 2.geojson'
       type: 'circle'
       data-type: 'geojson'
       layer-type: 'circle'
@@ -310,8 +311,8 @@
         circle-radius: 8
         circle-stroke-opacity: 1
     
-    - id: 'Double Green Produce'
-      url: '.\data\Double Green Wholesale.geojson'
+    - id: 'Double Green Produce 2'
+      url: './data\Double Green Wholesale.geojson'
       type: 'circle'
       data-type: 'geojson'
       layer-type: 'circle'
@@ -415,7 +416,7 @@
   bearing: 0
   description: Both New Son Yeng and Double Green Wholesalers operate in opposite parts of the United States and the world, providing fresh coconut all year round to New York and beyond. 
   layers:
-    - id: 'Coconut Connections'
+    - id: 'Coconut Connections 1'
       url: './data/New Song Yen Spoke and Hub/Coconut Exports/Coconut Connections.geojson'
       type: 'line'
       data-type: 'geojson'
@@ -426,7 +427,7 @@
         line-opacity: 0.5
         line-width: 0.05
 
-    - id: 'Coconut Departure'
+    - id: 'Coconut Departure 1'
       url: './data/New Song Yen Spoke and Hub/Coconut Exports/Coconut Departure.geojson'
       type: 'circle'
       data-type: 'geojson'
@@ -449,7 +450,7 @@
           29081.00, 25
         ]
 
-    - id: 'Coconut Destination'
+    - id: 'Coconut Destination 1'
       url: './data/New Song Yen Spoke and Hub/Durian Exports/Durian Destination.geojson'
       type: 'circle'
       data-type: 'geojson'
@@ -514,7 +515,7 @@
   
   layers:
     - id: 'New Son Yeng Ginger Connections'
-      url: '.\data\New Song Yen Spoke and Hub\Ginger\NS Ginger Connections.geojson'
+      url: './data\New Song Yen Spoke and Hub\Ginger\NS Ginger Connections.geojson'
       type: 'line'
       data-type: 'geojson'
       layer-type: 'line'
@@ -558,7 +559,7 @@
         circle-radius: 4
 
     - id: 'New Son Yeng Ginger Connections'
-      url: '.\data\New Song Yen Spoke and Hub\Ginger\NS Ginger Connections.geojson'
+      url: './data\New Song Yen Spoke and Hub\Ginger\NS Ginger Connections.geojson'
       type: 'line'
       data-type: 'geojson'
       layer-type: 'line'
@@ -576,8 +577,8 @@
   description: The weight ranges for New Son Yeng's departure points (18,000 to 22,010) are more consistent compared to Double Green's (13,160 to 27,500), potentially indicating a more stable supply.This extensive and diverse network structure could help New Son Yeng adapt to and offset periods of low harvest by leveraging its various sources and established distribution channels.
   
   layers:
-    - id: 'New Son Yeng Ginger Connections'
-      url: '.\data\New Song Yen Spoke and Hub\Ginger\NS Ginger Connections.geojson'
+    - id: 'New Son Yeng Ginger Connections 1'
+      url: './data\New Song Yen Spoke and Hub\Ginger\NS Ginger Connections.geojson'
       type: 'line'
       data-type: 'geojson'
       layer-type: 'line'
@@ -587,7 +588,7 @@
         line-opacity: 0.5
         line-width: 0.1
 
-    - id: 'New Son Yeng Ginger Departures'
+    - id: 'New Son Yeng Ginger Departures 1'
       url: './data/New Song Yen Spoke and Hub/Ginger/NS Ginger Departure 2.geojson'
       type: 'circle'
       data-type: 'geojson'
@@ -609,8 +610,8 @@
           21490.00, 25,
           22010.00, 25,
         ]
-        
-    - id: 'New Son Yeng Ginger Destination'
+
+    - id: 'New Son Yeng Ginger Destination 1'
       url: './data\New Song Yen Spoke and Hub\Ginger\NS Ginger Destination.geojson'
       type: 'circle'
       data-type: 'geojson'
@@ -621,19 +622,8 @@
         circle-opacity: 1
         circle-radius: 4
 
-    - id: 'New Son Yeng Ginger Connections'
-      url: '.\data\New Song Yen Spoke and Hub\Ginger\NS Ginger Connections.geojson'
-      type: 'line'
-      data-type: 'geojson'
-      layer-type: 'line'
-      persist: false
-      paint:
-        line-color: '#59f0a2'
-        line-opacity: 0.5
-        line-width: 0.1
-        
     - id: 'Double Green Ginger Departures'
-      url: '.\data\Double Green Spoke and Hub\Ginger\DG Ginger Departure.geojson'
+      url: './data\Double Green Spoke and Hub\Ginger\DG Ginger Departure.geojson'
       type: 'circle'
       data-type: 'geojson'
       layer-type: 'circle'
@@ -656,7 +646,7 @@
         ]
 
     - id: 'Double Green Ginger Destination'
-      url: '.\data\Double Green Spoke and Hub\Ginger\DG Ginger Destination.geojson'
+      url: './data\Double Green Spoke and Hub\Ginger\DG Ginger Destination.geojson'
       type: 'circle'
       data-type: 'geojson'
       layer-type: 'circle'
@@ -667,7 +657,7 @@
         circle-radius: 4
 
     - id: 'Double Green Ginger Connections'
-      url: '.\data\Double Green Spoke and Hub\Ginger\DG Ginger Connections.geojson'
+      url: './data\Double Green Spoke and Hub\Ginger\DG Ginger Connections.geojson'
       type: 'line'
       data-type: 'geojson'
       layer-type: 'line'
