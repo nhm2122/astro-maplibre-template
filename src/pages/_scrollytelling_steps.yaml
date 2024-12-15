@@ -609,6 +609,7 @@
           21490.00, 25,
           22010.00, 25,
         ]
+        
     - id: 'New Son Yeng Ginger Destination'
       url: './data\New Song Yen Spoke and Hub\Ginger\NS Ginger Destination.geojson'
       type: 'circle'
@@ -653,6 +654,7 @@
           22889.00, 25,
           27500.00, 25,
         ]
+
     - id: 'Double Green Ginger Destination'
       url: '.\data\Double Green Spoke and Hub\Ginger\DG Ginger Destination.geojson'
       type: 'circle'
@@ -663,6 +665,7 @@
         circle-color: '#ffb301'
         circle-opacity: 1
         circle-radius: 4
+
     - id: 'Double Green Ginger Connections'
       url: '.\data\Double Green Spoke and Hub\Ginger\DG Ginger Connections.geojson'
       type: 'line'
